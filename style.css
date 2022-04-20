@@ -1,0 +1,193 @@
+*{
+    font-size: 10px;
+	font-family: 'Roboto', sans-serif;
+/* Color Palette Variables*/
+    --color1:203, 232, 150;
+    --color2:170, 192, 170;
+    --color3: 252, 223, 166; 
+    --color4:161, 130, 118;
+    --color5:244, 184, 134;
+    --black: 0, 0, 0;
+    --white: 255, 255, 255;
+
+	
+	
+	--merriweather:'Merriweather', serif;
+	--opensans:'Open Sans', sans-serif;
+	--playfair:'Playfair Display', serif;
+	--roboto:'Roboto', sans-serif; 
+}   
+html, body {
+	height: 100%;
+}
+.container {
+	height: 100%;
+	display: grid;
+	grid-template: 14vh 1fr/ 1fr; 
+	grid-template-areas: "top" "library";
+	background-color: rgba(var(--color5));
+}
+.header {
+	grid-area: top;
+	display: flex;
+	flex-flow: column nowrap;
+	padding: 20px;
+	align-content: center;
+	
+}
+.header>div{
+	display: flex;
+	flex-flow: row nowrap;
+	flex:1;
+	justify-content: space-between;
+	padding: 20px 0 0 40px;
+	
+
+}
+.header>div>h1 {
+		font-size: 2.7rem;
+		font-family: var(--playfair);
+		font-weight: 500;
+		margin-bottom: 10px;
+}
+.header>div>p{
+	position: absolute;
+	display: flex;
+	top: 8px;
+	right: 8px;
+	gap: 3px;
+	padding: 5px;
+	font-family: var(--roboto);
+	color: rgba(var(--black),0.8);
+	font-weight: 500;
+	font-size: 0.9rem;
+}
+.header>button{
+	display: flex;
+	width: 120px;
+	height: 40px;
+	border-radius: 15px;
+	align-self: center;
+	font-size: 1rem;
+	font-family: var(--roboto);
+	align-items: center;
+	justify-content: center;
+	font-weight: 500;
+	background-color: rgba(var(--color2));
+}
+.addBookContainer{
+	align-self: center;
+	justify-self: center;
+	position:absolute;
+	left: calc(50% - 13vw);
+	top: 20vh;
+	height: auto;
+	width: 26vw;
+	border-radius: 50px;
+	padding: 20px;
+	gap: 15px 5px;
+	background-color: rgba(var(--color4));
+	transform: scale(0); 
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	flex-grow: 1;
+}
+.addBookContainer .active {
+	transform: scale(1);	
+}
+.addBookContainer>h1 {
+	justify-self: center;
+	align-self: center;
+	font-family: var(--merriweather);
+	font-size: 20px; 
+}
+.addBookContainer>input,  .addBookContainer>div>label {
+	height: 30px;
+	font-size: 18px;
+	font-weight: 600;
+	color: rgba(var(--black));
+	border-radius: 20px;
+	padding-left: 14px;
+}
+.addBookContainer>div>input {
+	height: 18px;
+	width: 18px;
+	border-radius: 50%;
+}
+.addBookContainer .active {
+	transform: scale(1);
+}
+.addBookContainer>button {
+	grid-area: button ;
+	justify-self: center;
+	align-self: center;
+	font-family: var(--roboto);
+	font-size: 20px;
+	background-color: var(--color2);
+}
+.addBookContainer>label {
+	justify-self: center;
+	font-family: var(--opensans);
+	
+}
+	
+
+.libraryContainer {
+	grid-area: library;
+	padding: 50px;	
+
+	background-color: blue;;
+}
+
+/* Linked Font Families
+        'Merriweather', serif;
+        'Open Sans', sans-serif;
+        'Playfair Display', serif;
+        'Roboto', sans-serif; */ 
+
+
+
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}   

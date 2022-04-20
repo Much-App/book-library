@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,400;1,500;1,900&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title> Library</title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div>
+                <h1>Library</h1>
+                <p class="madeby">Made by Much_App <a class="githubLogo" href="https://github.com/Much-App"><img src="githubLogo.svg" alt="github logo" height="20" width="auto">  </a></p>
+            </div>
+            <button id='addBookBtn'>Add Book</button>
+        </div>
+
+
+        <div class="libraryContainer">
+            <div id="hobbit" class="card">
+                <h1>The Hobbit</h1>
+                <h2>By J.R.R. Tolkien</h2>
+                <h3>304 pages</h3>
+                <button id="readStatus">Read</button>
+                <button>Remove from Library</button>
+            </div>
+        </div>
+        
+    
+        <div class="addBookContainer">
+            <input type="text" id="addTitleInput" placeholder="Book Title">
+            <input type="text" id="addAuthorInput" placeholder="Author">
+            <input type="number" id="addPages" placeholder="# of Pages">
+            <div><label for="readStatus">Read?</label><input type="checkbox" id="readStatus"></div>
+            <button id="addBookBtn">Add Book</button>
+        </div>
+    </div>
+
+    <script src="book-library.js"></script>
+</body>
+</html>
+
