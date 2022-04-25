@@ -133,7 +133,7 @@ html, body {
 }
 	
 
-.libraryContainer {
+#library {
 	grid-area: library;
 	padding: 50px;	
 	background-color: blue;
