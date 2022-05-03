@@ -131,8 +131,6 @@ html, body {
 	font-family: var(--opensans);
 	
 }
-	
-
 #library {
 	grid-area: library;
 	padding: 50px;	
@@ -151,14 +149,26 @@ html, body {
 	flex-flow: column nowrap;
 	justify-content: space-evenly;
 	align-items: center;
-
+	font-family: var(--roboto) ;
+	font-size: 20px;
 }
-
-.card>h2 {
-	align-self: flex-end;
+.card>h1 {
+	font-size: 26px;
+	font-weight: bolder;
+	font-style: italic;
 }
-
-
+.card>div>button {
+	margin: 10px;
+	width: 90px;
+	height: 25px;
+}
+#readBtn {
+	width: 90px;
+	height: 25px;
+}
+.read {
+	background-color: green;
+}
 /* Linked Font Families
         'Merriweather', serif;
         'Open Sans', sans-serif;
